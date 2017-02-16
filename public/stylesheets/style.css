@@ -1,0 +1,87 @@
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  position: relative;
+  height: 100%;
+  overflow:hidden;
+  background-color: #ccc;
+}
+main {
+  height: 60%;
+  overflow-y: auto;
+  /**/
+
+}
+footer {
+  height: 100%;
+  background-color: lightblue;
+}
+h1 {
+  text-align: left;
+  color: white;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.content {
+  margin: 0 auto;
+  height: 100%;
+}
+.section-1 {
+  height: 100%;
+  width: 500px;
+  background-color: green;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+.section-2 {
+  height: 45%;
+  width: 300px;
+  background-color: blue;
+  display: inline-block;
+  float: right;
+}
+.sub {
+  height: 40px;
+  background-color: darkgreen;
+  margin: 10px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 840px) {
+  main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .content {
+    width: 820px;
+  }
+  .sub {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 840px){
+  .content {
+    margin: 10px;
+  }
+  .section-2, .section-1 {
+    width: 100%;
+  }
+  .section-1 {
+    margin-top: 10px;
+  }
+  .sub {
+    width: calc(50% - 25px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sub {
+    width: auto;
+    display: block;
+  }
+}
