@@ -1,10 +1,11 @@
 var config = {
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      database: 'xt6elqxr6t_db',
-      user: 'xt6elqxr6t',
-      password: 'srqrsqacaa'
+      host        : 'assignment.codsssqklool.eu-central-1.rds.amazonaws.com',
+      port        : '5432',
+      database    : 'xt6elqxr6t_db',
+      user        : 'xt6elqxr6t',
+      password    : 'srqrsqacaa'
   }
 }
 
