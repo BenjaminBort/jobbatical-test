@@ -6,7 +6,12 @@ function topActiveUsers(req, res, next) {
     User.mostActivUsers(req.query['page']).then(function (users) {
       users = users.toJSON();
       users = users.filter(function (user) {
+        user.listings = [];
+        user.listings_complete.filter(function(listing) {
+          user.listings.push({'name': listing.name});
+        })
         user.count = user.count.length;
+        delete user.listings_complete;
         return user;
       });
       res.status(200).json(users);

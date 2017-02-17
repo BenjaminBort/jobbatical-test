@@ -39,7 +39,7 @@ var User = db.bookshelf.Model.extend({
     /*
     ** Get 3 latest user's listings order by date
     */
-    listings: function () {
+    listings_complete: function () {
       return this.hasMany(Listing, 'created_by').query(function (qb) {
         qb.orderBy('created_at', 'DESC');
         qb.limit(3);
@@ -54,7 +54,7 @@ var User = db.bookshelf.Model.extend({
       var data = this.forge().orderBy('name').fetchPage({
         pageSize: 2, // set results number by page
         page: page,
-        withRelated: ['count', 'listings'] // call relation table
+        withRelated: ['count', 'listings_complete'] // call relation table
       });
       return data;
     },
