@@ -26,7 +26,7 @@ Linked files is located in /public directory
 ### Back-end
 Launch Postman
 
-### Available routes
+#### Available routes
 Returns user info, count of applications in the last week and the names of the 3 latest applied listings.
 ```Shell
 [GET] http://127.0.0.1:3000/topActiveUsers?page={{page}}
