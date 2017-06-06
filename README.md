@@ -1,8 +1,3 @@
-# jobbatical-test
-
-Jobbatical technical test
-Part front-end / back-end
-
 ## Basic Usage
 Clone directory
 

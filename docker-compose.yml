@@ -1,0 +1,7 @@
+docker-git:
+   image: docker-git
+   # Hint : $PWD => current directory on the computer => <3 usefull <3
+   volumes:
+      -  $PWD:/project
+   ports:
+      -  3000:3000
